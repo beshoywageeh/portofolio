@@ -162,6 +162,11 @@
           transition-delay: 0.4s;
 }
 
+.nav-item:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -172,7 +177,6 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI",Tahoma,sans-serif;
   line-height: 1.5;
 }
 
@@ -413,21 +417,21 @@ main#home h1 {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
-  .menu-nav {
-    height: 75vh;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
   .menu-branding {
     height: 25Vh;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../img/IMG_20200107_175918 (2) (2).jpg.jpg");
+    background: url("../img/IMG_20200107_175918 (2) (2).jpg");
     width: 150px;
     height: 150px;
+  }
+  .menu-branding .menu-nav {
+    height: 75vh;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
   }
   .about-info {
         grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
