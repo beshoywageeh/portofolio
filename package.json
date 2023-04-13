@@ -1,9 +1,4 @@
 {
-  "name": "portofolio",
-  "version": "1.0.0",
-  "repository": "https://github.com/beshoywageeh/portofolio.git",
-  "author": "Beshoy Wageeh <85949107+beshoywageeh@users.noreply.github.com>",
-  "license": "MIT",
   "dependencies": {
     "flowbite": "^1.6.0",
     "sass": "^1.50.1"
