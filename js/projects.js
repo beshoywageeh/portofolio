@@ -25,4 +25,13 @@ let data = [
       "https://d85wutc1n854v.cloudfront.net/live/products/icons/WB02N8N90.jpg?v=1.0",
     live: "#",
   },
+  {
+    name: "church and scout managment system",
+    description:
+      "church and scout managment system that you can add user and attendance and see how came and not.",
+    github: "https://github.com/beshoywageeh/Scout",
+    image:
+      "https://d85wutc1n854v.cloudfront.net/live/products/icons/WB02N8N90.jpg?v=1.0",
+    live: "#",
+  },
 ];

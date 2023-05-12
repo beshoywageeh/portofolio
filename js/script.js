@@ -5,7 +5,7 @@ data.map(append_data);
 function append_data(item) {
   projects.innerHTML += `<div id="${
     item.name
-  }" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mr-4">
+  }" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 my-4 mx-4">
 <a href="${item.github}">
    <img class="rounded-t-lg" src="${item.image}" alt="" />
 </a>
