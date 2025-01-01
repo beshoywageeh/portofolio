@@ -36,7 +36,7 @@ async function fetchRepositories() {
     const repos = await response.json();
 
     // Filter out forked repositories
-    const originalRepos = repos.filter((repo) => !repo.fork);
+    //const originalRepos = repos.filter((repo) => !repo.fork);
 
     if (originalRepos.length === 0) {
       reposDiv.innerHTML = `
