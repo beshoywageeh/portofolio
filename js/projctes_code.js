@@ -36,7 +36,7 @@ async function fetchRepositories() {
     const repos = await response.json();
 
     // Filter out forked repositories
-    //const originalRepos = repos.filter((repo) => !repo.fork);
+    const originalRepos = Array.from(repos).filter((repo) => !repo.fork);
 
     if (originalRepos.length === 0) {
       reposDiv.innerHTML = `
@@ -63,11 +63,15 @@ async function fetchRepositories() {
                 <div class="card-body p-6 bg-white rounded-lg shadow-md">
     <div class="flex justify-between items-start mb-4">
         <h5 class="text-xl font-semibold text-gray-900">
-            <a href="${repo.html_url}" class="hover:text-blue-600 transition-colors" target="_blank">
+            <a href="${
+              repo.html_url
+            }" class="hover:text-blue-600 transition-colors" target="_blank">
                 ${repo.name}
             </a>
         </h5>
-        <span class="${repo.private ? 'bg-red-500' : 'bg-green-500'} text-white text-xs font-medium px-2.5 py-1 rounded-full">
+        <span class="${
+          repo.private ? "bg-red-500" : "bg-green-500"
+        } text-white text-xs font-medium px-2.5 py-1 rounded-full">
             ${repo.private ? "Private" : "Public"}
         </span>
     </div>
@@ -77,15 +81,25 @@ async function fetchRepositories() {
 
     <div class="space-y-2 mb-4">
         <div class="flex items-center text-gray-600">
-            <i class="bi bi-calendar-plus mr-2"></i> Created: ${formatDate(repo.created_at)}
+            <i class="bi bi-calendar-plus mr-2"></i> Created: ${formatDate(
+              repo.created_at
+            )}
         </div>
         <div class="flex items-center text-gray-600">
-            <i class="bi bi-calendar-check mr-2"></i> Last Updated: ${formatDate(repo.updated_at)}
+            <i class="bi bi-calendar-check mr-2"></i> Last Updated: ${formatDate(
+              repo.updated_at
+            )}
         </div>
-        ${repo.pushed_at ? `
+        ${
+          repo.pushed_at
+            ? `
         <div class="flex items-center text-gray-600">
-            <i class="bi bi-code-square mr-2"></i> Last Push: ${formatDate(repo.pushed_at)}
-        </div>` : ""}
+            <i class="bi bi-code-square mr-2"></i> Last Push: ${formatDate(
+              repo.pushed_at
+            )}
+        </div>`
+            : ""
+        }
     </div>
 
     <div class="flex gap-2 flex-wrap mb-4">
@@ -98,23 +112,33 @@ async function fetchRepositories() {
         <span class="bg-teal-500 text-white text-xs font-medium px-2.5 py-1 rounded-full">
             <i class="bi bi-eye mr-1"></i> ${repo.watchers_count} watchers
         </span>
-        ${repo.language ? `
+        ${
+          repo.language
+            ? `
         <span class="bg-black text-white text-xs font-medium px-2.5 py-1 rounded-full">
             <i class="bi bi-code-slash mr-1"></i> ${repo.language}
-        </span>` : ""}
+        </span>`
+            : ""
+        }
     </div>
 
     <div class="repo-images mt-4"></div>
 </div>
 
 <div class="card-footer p-6 bg-gray-50 rounded-b-lg">
-    <a href="${repo.html_url}/commits" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" target="_blank">
+    <a href="${
+      repo.html_url
+    }/commits" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" target="_blank">
         <i class="bi bi-git mr-2"></i> View Commits
     </a>
-    <a href="${repo.html_url}/issues" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 ml-2" target="_blank">
+    <a href="${
+      repo.html_url
+    }/issues" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 ml-2" target="_blank">
         <i class="bi bi-exclamation-circle mr-2"></i> Issues
     </a>
-    <a href="${repo.html_url}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 ml-2" target="_blank">
+    <a href="${
+      repo.html_url
+    }" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 ml-2" target="_blank">
         <i class="bi bi-link mr-2"></i> Check Repo
     </a>
 </div>
@@ -159,4 +183,3 @@ async function fetchRepositories() {
 
 // Fetch repositories when the page loads
 document.addEventListener("DOMContentLoaded", fetchRepositories);
-
