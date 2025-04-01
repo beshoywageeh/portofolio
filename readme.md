@@ -1,5 +1,5 @@
-# Hi 👋, My Old Portofolio Design
+# Hi 👋, My Portofolio Design
 
-![](https://github.com/beshoywageeh/old-portofolio/blob/main/img/SharedScreenshot.jpg?raw=true)
+![](https://github.com/beshoywageeh/portofolio/blob/main/dist/img/brave_A8oT6UQMZP.png?raw=true)
 
-[Check It Live](https://beshoywageeh.github.io/old-portofolio/)
+[Check It Live](https://beshoywageeh.github.io/portofolio/index.html)
