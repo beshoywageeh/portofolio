@@ -1,0 +1,41 @@
+*{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-blue: #3B82F6;
+    --primary-dark: #1E293B;
+    --primary-darker: #0F172A;
+}
+
+/* Force dark mode styles */
+body {
+    background-color: var(--primary-darker);
+    color: #F8FAFC;
+}
+
+html {
+    color-scheme: dark;
+    scroll-padding-top: 5rem; /* Add padding for fixed header */
+}
+
+/* Section highlight effect */
+section {
+    transition: background-color 0.5s ease;
+}
+
+section.highlight {
+    animation: highlightSection 2s ease;
+}
+
+@keyframes highlightSection {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(59, 130, 246, 0.1);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
