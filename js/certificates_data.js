@@ -32,7 +32,7 @@ const certificates = [
         title: "Java Script",
         organization: "Solo Learn",
         date: "2020",
-        image: "https://i.ibb.co/r2KSHvRm/js-certifaction.jpg",
+        image: "https://i.ibb.co/HLF26zMM/9448cb45-974b-43ee-be37-eaeb9b2e6882.png",
         link: "https://www.sololearn.com/certificates/CT-IBST1G7Q"
     },
     {
