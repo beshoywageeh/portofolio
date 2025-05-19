@@ -11,7 +11,7 @@ function renderCertificates() {
             <div class="relative z-10 p-6">
                 <h3 class="mb-2 text-xl font-semibold text-white transition-colors duration-300 group-hover:text-blue-400">
                     ${cert.title}</h3>
-                <p class="mb-4 text-gray-400 transition-colors duration-300 group-hover:text-gray-300">${cert.organization} • ${cert.date}</p>
+                <p class="mb-4 text-gray-400 transition-colors duration-300 group-hover:text-gray-300" target="_blank">${cert.organization} • ${cert.date}</p>
                 <a href="${cert.link}"
                     class="inline-flex items-center text-blue-400 transition-all duration-300 hover:text-blue-300 group-hover:translate-x-2">
                     View Certificate

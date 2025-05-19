@@ -15,46 +15,46 @@ const certificates = [
         link: "#"
     },
     {
-        title: "UI & UX Design",
-        organization: "Edraak",
-        date: "2019",
+        title: "Freelance",
+        organization: "Mahara Tech",
+        date: "",
         image: "https://i.ibb.co/GQqP6GYn/freelance-page-0001.jpg",
         link: "#"
     },
     {
-        title: "UI & UX Design",
-        organization: "Edraak",
-        date: "2019",
+        title: "FWD Challenger",
+        organization: "Egypt FWD",
+        date: "2022",
         image: "https://i.ibb.co/qYhxtZxn/Fwd-Challenger-page-0001.jpg",
         link: "#"
     },
     {
-        title: "UI & UX Design",
-        organization: "Edraak",
-        date: "2019",
+        title: "Java Script",
+        organization: "Solo Learn",
+        date: "2020",
         image: "https://i.ibb.co/r2KSHvRm/js-certifaction.jpg",
-        link: "#"
+        link: "https://www.sololearn.com/certificates/CT-IBST1G7Q"
     },
     {
-        title: "UI & UX Design",
-        organization: "Edraak",
+        title: "Nano Degree",
+        organization: "Udacity",
         date: "2019",
         image: "https://i.ibb.co/8LFM7cHj/nano-degree-certifcate-page-0001.jpg",
-        link: "#"
+        link: "https://www.udacity.com/certificate/e/b7891c64-a090-11e8-b9d4-f37a8fce472b"
     },
     {
-        title: "UI & UX Design",
-        organization: "Edraak",
+        title: "NTL - Deploma",
+        organization: "Next Technology Leader",
         date: "2019",
         image: "https://i.ibb.co/k2tWChVQ/ntl.jpg",
         link: "#"
     },
     {
-        title: "UI & UX Design",
-        organization: "Edraak",
+        title: "SEO - Basics",
+        organization: "Udemy",
         date: "2019",
         image: "https://i.ibb.co/gbpJ0cWx/Udemy-SEO-page-0001.jpg",
-        link: "#"
+        link: "https://www.udemy.com/certificate/UC-JNTLOTAM/"
     },
 
 
