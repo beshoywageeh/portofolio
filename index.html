@@ -325,28 +325,8 @@
         <div class="w-24 h-1 mx-auto mt-4 bg-blue-500"></div>
       </div>
 
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Certificate Card -->
-        <div
-          class="group relative overflow-hidden bg-slate-800 rounded-lg border border-slate-700 transition-all duration-500 hover:shadow-xl hover:shadow-blue-500/30 hover:scale-[1.02] hover:border-blue-500/50">
-          <div
-            class="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-b from-transparent to-slate-900/90 group-hover:opacity-100">
-          </div> <img src="path/to/cert-image.jpg" alt="Certificate Name"
-            class="object-cover w-full h-48 transition-transform duration-500 group-hover:scale-110">
-          <div class="relative z-10 p-6">
-            <h3 class="mb-2 text-xl font-semibold text-white transition-colors duration-300 group-hover:text-blue-400">
-              Certificate Name</h3>
-            <p class="mb-4 text-gray-400 transition-colors duration-300 group-hover:text-gray-300">Issuing Organization
-              • Date</p> <a href="#"
-              class="inline-flex items-center text-blue-400 transition-all duration-300 hover:text-blue-300 group-hover:translate-x-2">
-              View Certificate <svg
-                class="w-4 h-4 ml-2 transition-transform duration-300 transform group-hover:translate-x-1" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg> </a>
-          </div>
-        </div>
-        <!-- Add more certificates -->
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" id="certificates-container">
+        <!-- Certificates will be loaded here via JavaScript -->
       </div>
     </div>
   </section>
@@ -433,6 +413,8 @@
   <script src="./js/animations.js"></script>
   <script src="./js/projects_data.js"></script>
   <script src="./js/projctes_code.js"></script>
+  <script src="./js/certificates_data.js"></script>
+  <script src="./js/certificates_code.js"></script>
   <script src="./js/smooth-scroll.js"></script>
 </body>
 
