@@ -9,22 +9,31 @@ const projects = [
     isPrivate: false
   },
   {
-    name: "E-commerce Platform",
-    description: "Full-featured e-commerce platform with product management, cart functionality, and payment integration.",
-    technologies: ["PHP", "Laravel", "MySQL", "JavaScript"],
-    image: "./dist/img/projects/ecommerce.jpg",
-    liveUrl: "https://example.com/ecommerce",
-    githubUrl: "https://github.com/username/ecommerce",
+    name: "pos system",
+    description: "A point of sale system built with HTML, CSS, and JavaScript. Features barcode scanning, inventory management, and sales reporting.",
+    technologies: ["PHP", "Laravel", "MySQL", "JavaScript",'blade','bootstrap','jquery'],
+    image: "https://github.com/beshoywageeh/pos/blob/main/assets/img/screenshots/2.png?raw=true",
+    liveUrl: "#",
+    githubUrl: "https://github.com/beshoywageeh/pos",
     isPrivate: false
   },
   {
-    name: "Task Management System",
-    description: "A comprehensive task management system with real-time updates, team collaboration, and progress tracking.",
-    technologies: ["Node.js", "Express", "MongoDB", "React"],
-    image: "./dist/img/projects/taskmanager.jpg",
-    liveUrl: "https://example.com/taskmanager",
-    githubUrl: "https://github.com/username/taskmanager",
-    isPrivate: true
+    name: "Scout",
+    description: "A Church Management System",
+    technologies: ["PHP", "Laravel", "MySQL", "JavaScript",'blade','bootstrap','jquery'],
+    image: "./dist/img/scout.jpg",
+    liveUrl: "https://elsafinascout.runasp.net/scout/login",
+    githubUrl: "https://github.com/beshoywageeh/Scout",
+    isPrivate: false
+  },
+  {
+    name: "School Management System",
+    description: "A School Management System built with HTML, CSS, and JavaScript. Features students management, attendance tracking, and reports generation. ",
+    technologies: ["PHP", "Laravel", "MySQL", "JavaScript",'blade','bootstrap','jquery'],
+    image: "./dist/img/school.jpg",
+    liveUrl: "#",
+    githubUrl: "https://github.com/beshoywageeh/school_managment",
+    isPrivate: false
   }
   // Add more projects as needed
 ]; 
