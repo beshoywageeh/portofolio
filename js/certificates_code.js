@@ -7,47 +7,48 @@ function renderCertificates() {
     if (!modalContainer) {
         modalContainer = document.createElement('div');
         modalContainer.id = 'certificate-modal';
-        modalContainer.className = 'fixed inset-0 z-50 hidden items-center justify-center backdrop-blur-sm transition-all duration-300';
+        modalContainer.className = 'hidden fixed inset-0 z-50 justify-center items-center backdrop-blur-md transition-all duration-500';
         modalContainer.innerHTML = `
-            <div class="absolute inset-0 bg-black/80 transition-opacity duration-300"></div>
-            <div class="relative max-w-5xl w-full mx-4 transform transition-all duration-500 scale-95 opacity-0" id="modal-content">
-                <button id="close-modal" class="absolute -top-16 right-0 text-white hover:text-blue-400 transition-colors p-2 rounded-full hover:bg-white/10 z-50">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="absolute inset-0 transition-opacity duration-500 bg-black/90"></div>
+            <div class="relative mx-4 w-full max-w-6xl opacity-0 transition-all duration-700 transform scale-90" id="modal-content">
+                <button id="close-modal" class="absolute right-0 -top-16 z-50 p-3 text-white rounded-full transition-all duration-300 hover:text-blue-400 hover:bg-white/10 hover:scale-110 group">
+                    <svg class="w-8 h-8 transition-transform duration-300 transform group-hover:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <div class="bg-slate-900/95 rounded-xl overflow-hidden shadow-2xl border border-slate-700/50">
-                    <div class="p-4">
-                        <div class="w-full max-w-xl mx-auto">
+                <div class="overflow-hidden rounded-2xl border shadow-2xl backdrop-blur-xl transition-all duration-500 bg-slate-900/95 border-slate-700/50 hover:border-blue-500/30 hover:shadow-blue-500/20">
+                    <div class="p-6">
+                        <div class="relative mx-auto w-full max-w-4xl group">
+                            <div class="absolute inset-0 bg-gradient-to-t via-transparent opacity-0 transition-opacity duration-300 pointer-events-none from-slate-900/90 group-hover:opacity-100"></div>
                             <img id="modal-image" src="" alt="" 
-                                class="w-full h-auto rounded-xl bg-slate-800/50">
+                                class="w-full h-auto rounded-xl bg-slate-800/50 transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
                         </div>
                     </div>
-                    <div class="p-6 space-y-4">
-                        <div class="flex items-start justify-between">
-                            <div>
-                                <h3 id="modal-title" class="text-2xl font-bold text-white mb-2"></h3>
-                                <p id="modal-org" class="text-blue-400 font-medium"></p>
+                    <div class="p-8 space-y-6">
+                        <div class="flex justify-between items-start">
+                            <div class="space-y-2 transition-all duration-300 hover:translate-x-2">
+                                <h3 id="modal-title" class="text-3xl font-bold text-white"></h3>
+                                <p id="modal-org" class="text-lg font-medium text-blue-400"></p>
                             </div>
-                            <div class="text-right">
-                                <p id="modal-date" class="text-gray-400 text-sm"></p>
+                            <div class="space-y-2 text-right">
+                                <p id="modal-date" class="text-lg font-medium text-gray-400"></p>
                                 <a id="modal-link" href="#" target="_blank" 
-                                   class="inline-flex items-center mt-2 text-blue-400 hover:text-blue-300 transition-colors">
-                                    View Original Certificate
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                   class="inline-flex items-center mt-2 text-blue-400 transition-all duration-300 hover:text-blue-300 hover:translate-x-2 group">
+                                    <span class="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-blue-400 after:origin-right after:scale-x-0 after:transition-transform after:duration-300 group-hover:after:scale-x-100 group-hover:after:origin-left">View Original Certificate</span>
+                                    <svg class="ml-2 w-5 h-5 transition-transform duration-300 transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                     </svg>
                                 </a>
                             </div>
                         </div>
-                        <div class="flex gap-2 mt-4 justify-center">
-                            <button id="prev-cert" class="p-2 text-white hover:text-blue-400 transition-colors rounded-full hover:bg-white/10">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex gap-4 justify-center mt-6">
+                            <button id="prev-cert" class="p-3 text-white rounded-full transition-all duration-300 hover:text-blue-400 hover:bg-white/10 hover:scale-110 group">
+                                <svg class="w-7 h-7 transition-transform duration-300 transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                                 </svg>
                             </button>
-                            <button id="next-cert" class="p-2 text-white hover:text-blue-400 transition-colors rounded-full hover:bg-white/10">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <button id="next-cert" class="p-3 text-white rounded-full transition-all duration-300 hover:text-blue-400 hover:bg-white/10 hover:scale-110 group">
+                                <svg class="w-7 h-7 transition-transform duration-300 transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
                             </button>
@@ -61,7 +62,7 @@ function renderCertificates() {
         // Add event listeners
         const closeModal = () => {
             const modalContent = document.getElementById('modal-content');
-            modalContent.classList.add('scale-95', 'opacity-0');
+            modalContent.classList.add('scale-90', 'opacity-0');
             setTimeout(() => {
                 modalContainer.classList.add('hidden');
                 modalContainer.classList.remove('flex');
@@ -103,10 +104,10 @@ function renderCertificates() {
     const certificatesHTML = certificates.map((cert, index) => `
         <div class="group relative overflow-hidden bg-slate-800 rounded-lg border border-slate-700 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-[1.02] hover:border-blue-500/50 hover:-translate-y-1">
             <div class="absolute inset-0 transition-all duration-500 opacity-0 bg-gradient-to-b from-transparent via-slate-900/70 to-slate-900/95 group-hover:opacity-100 backdrop-blur-[2px]">
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <div class="flex absolute inset-0 justify-center items-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                    <div class="transition-transform duration-500 transform translate-y-4 group-hover:translate-y-0">
                         <button onclick="openCertificateModal('${cert.image}', '${cert.title}', '${cert.organization}', '${cert.date}', '${cert.link}', ${index})"
-                            class="px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 border border-blue-500/30">
+                            class="px-4 py-2 text-blue-400 rounded-full border backdrop-blur-sm transition-all duration-300 bg-blue-500/20 hover:bg-blue-500/30 hover:scale-105 border-blue-500/30">
                             View Details
                         </button>
                     </div>
@@ -114,27 +115,27 @@ function renderCertificates() {
             </div>
             <div class="aspect-[4/3] overflow-hidden">
                 <img src="${cert.image}" alt="${cert.title}"
-                    class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-75 cursor-pointer"
+                    class="object-cover w-full h-full transition-all duration-500 cursor-pointer group-hover:scale-110 group-hover:brightness-75"
                     onclick="openCertificateModal('${cert.image}', '${cert.title}', '${cert.organization}', '${cert.date}', '${cert.link}', ${index})">
             </div>
             <div class="relative z-10 p-6 transform transition-all duration-500 group-hover:translate-y-[-0.5rem]">
-                <div class="flex items-start justify-between mb-2">
+                <div class="flex justify-between items-start mb-2">
                     <h3 class="text-xl font-semibold text-white transition-colors duration-300 group-hover:text-blue-400 group-hover:translate-x-1">
                         ${cert.title}
                     </h3>
-                    <span class="text-sm text-blue-400/0 group-hover:text-blue-400 transition-colors duration-300">
+                    <span class="text-sm transition-colors duration-300 text-blue-400/0 group-hover:text-blue-400">
                         ${cert.date}
                     </span>
                 </div>
                 <p class="mb-4 text-gray-400 transition-colors duration-300 group-hover:text-gray-300 group-hover:translate-x-1">
                     ${cert.organization}
                 </p>
-                <div class="flex gap-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                <div class="flex gap-4 opacity-0 transition-all duration-500 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
                     <a href="${cert.link}"
                         class="inline-flex items-center text-blue-400 transition-all duration-300 hover:text-blue-300 hover:scale-105"
                         target="_blank">
                         View Certificate
-                        <svg class="w-4 h-4 ml-2 transition-transform duration-300 transform group-hover:translate-x-1" 
+                        <svg class="ml-2 w-4 h-4 transition-transform duration-300 transform group-hover:translate-x-1" 
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
@@ -142,7 +143,7 @@ function renderCertificates() {
                     <button onclick="openCertificateModal('${cert.image}', '${cert.title}', '${cert.organization}', '${cert.date}', '${cert.link}', ${index})"
                         class="inline-flex items-center text-blue-400 transition-all duration-300 hover:text-blue-300 hover:scale-105">
                         View Gallery
-                        <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="ml-2 w-4 h-4 transition-transform duration-300 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
                         </svg>
                     </button>
@@ -178,11 +179,11 @@ function openCertificateModal(imageUrl, title, organization, date, link, index) 
         
         // Trigger animation
         requestAnimationFrame(() => {
-            modalContent.classList.remove('scale-95', 'opacity-0');
+            modalContent.classList.remove('scale-90', 'opacity-0');
         });
     };
     img.src = imageUrl;
 }
 
 // Call the function when the DOM is loaded
-document.addEventListener('DOMContentLoaded', renderCertificates); 
+document.addEventListener('DOMContentLoaded', renderCertificates);
