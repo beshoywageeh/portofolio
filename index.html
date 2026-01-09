@@ -1,421 +1,762 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="Beshoy Wageeh - Backend Developer & System Architect specializing in PHP, Laravel, and database optimization. View my portfolio, projects, and technical expertise."
+        />
+        <meta
+            name="keywords"
+            content="HTML, CSS, JavaScript,php,laravel,sql,mysql,database,sqlserver,postgresql,node.js,go lang,"
+        />
+        <meta name="author" content="Bishoy Wageeh" />
+        <title>Beshoy Wageeh - Backend Developer & System Architect</title>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="dist/output.css" />
+        <link rel="stylesheet" href="dist/animations.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="./dist/img/profile-pic.png" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Beshoy Wageeh - Backend Developer & System Architect specializing in PHP, Laravel, and database optimization. View my portfolio, projects, and technical expertise.">
-  <meta name="keywords"
-    content="HTML, CSS, JavaScript,php,laravel,sql,mysql,database,sqlserver,postgresql,node.js,go lang,">
-  <meta name="author" content="Bishoy Wageeh">
-  <title>Beshoy Wageeh - Backend Developer & System Architect</title>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="dist/output.css" />
-  <link rel="stylesheet" href="dist/animations.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
-  <link rel="icon" href="./dist/img/profile-pic.png">
-  <title>Welcome To My Profile</title>
-</head>
+    <body>
+        <!-- Navbar -->
+        <nav
+            class="fixed top-0 left-0 right-0 z-50 border-b bg-slate-900 border-slate-700"
+        >
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <a
+                        href="#"
+                        class="text-xl font-bold text-white transition-colors duration-300 hover:text-blue-400"
+                    >
+                        Beshoy Wageeh
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="flex items-center space-x-8">
+                            <a
+                                href="#home"
+                                class="text-gray-100 transition-colors hover:text-blue-400"
+                                >Home</a
+                            >
+                            <a
+                                href="#about"
+                                class="text-gray-100 transition-colors hover:text-blue-400"
+                                >About</a
+                            >
+                            <a
+                                href="#skills"
+                                class="text-gray-100 transition-colors hover:text-blue-400"
+                                >Skills</a
+                            >
+                            <a
+                                href="#projects"
+                                class="text-gray-100 transition-colors hover:text-blue-400"
+                                >Projects</a
+                            >
+                            <a
+                                href="#contact"
+                                class="text-gray-100 transition-colors hover:text-blue-400"
+                                >Contact</a
+                            >
+                            <a
+                                href="https://kutt.it/eKquhD"
+                                target="_blank"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 hover:scale-105"
+                            >
+                                Hire Me
+                            </a>
+                        </div>
+                    </div>
 
-<body>
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 right-0 z-50 border-b bg-slate-900 border-slate-700">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16"> <a href="#"
-          class="text-xl font-bold text-white transition-colors duration-300 hover:text-blue-400"> Beshoy Wageeh </a>
-        <div class="hidden md:block">
-          <div class="flex items-center space-x-8"> <a href="#"
-              class="text-gray-100 transition-colors hover:text-blue-400">Home</a> <a href="#about"
-              class="text-gray-100 transition-colors hover:text-blue-400">About</a> <a href="#skills"
-              class="text-gray-100 transition-colors hover:text-blue-400">Skills</a> <a href="#projects"
-              class="text-gray-100 transition-colors hover:text-blue-400">Projects</a> <a href="#contact"
-              class="text-gray-100 transition-colors hover:text-blue-400">Contact</a> <a href="https://kutt.it/eKquhD"
-              target="_blank"
-              class="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 hover:scale-105">
-              Hire Me </a> </div>
-        </div>
-
-        <button type="button" class="p-2 bg-gray-100 rounded-md md:hidden" id="mobile-menu-button">
-          <i data-feather="menu" class="w-6 h-6"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile menu -->
-    <div class="hidden md:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-b border-gray-200">
-        <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100">Home</a>
-        <a href="#about" class="block px-3 py-2 rounded-md hover:bg-gray-100">About</a>
-        <a href="#skills" class="block px-3 py-2 rounded-md hover:bg-gray-100">Skills</a>
-        <a href="#projects" class="block px-3 py-2 rounded-md hover:bg-gray-100">Projects</a>
-        <a href="#contact" class="block px-3 py-2 rounded-md hover:bg-gray-100">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Enhanced Hero Section -->
-  <section class="pt-32 pb-20 bg-gradient-to-br from-slate-900 to-slate-800 md:pt-40 md:pb-28">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="flex flex-col items-center justify-between gap-12 md:flex-row">
-        <div class="flex-1 text-center md:text-left">
-          <h1 class="mb-6 text-4xl font-bold text-white md:text-6xl section-animate animate slide-left">
-            <span class="hero-text typing-cursor"></span><br /> <span
-              class="text-blue-400 font-bold transition-base hover:text-blue-300 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-blue-400 after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
-            </span> </h1>
-          <p class="max-w-2xl mb-8 text-lg text-gray-200 animate fade-in">
-            Specializes in developing robust and scalable software solutions using modern technologies.
-            Experience in PHP, Laravel, and database optimization.
-          </p>
-          <div class="flex flex-wrap justify-center gap-4 md:justify-start">
-            <a href="#contact"
-              class="px-6 py-3 font-medium text-white bg-blue-600 rounded-lg shadow-lg transition-base hover:bg-blue-700 hover:scale-105 hover:shadow-blue-500/50">
-              <i data-feather="phone" class="inline w-4 h-4 mr-2"></i>
-              Contact Me
-            </a>
-            <a target="_blank" href="https://kutt.it/bishoy-cv"
-              class="px-6 py-3 font-medium text-white border border-blue-500 rounded-lg transition-base hover:bg-blue-600 hover:border-blue-400 hover:scale-105"
-              download>
-              <i data-feather="download" class="inline w-4 h-4 mr-2"></i>
-              Download CV
-            </a>
-          </div>
-        </div>
-        <div class="flex-1 max-w-md">
-          <img src="dist/img/profile-pic.png" alt="Beshoy Wageeh"
-            class="w-64 h-64 mx-auto transition-all duration-300 transform rounded-full shadow-xl ring-4 ring-blue-500/30 md:w-80 md:h-80 hover:ring-blue-400/50 hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-105">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-slate-900" style="padding-top:5rem;padding-bottom:5rem">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="mb-16 text-center">
-        <h2 class="text-3xl font-bold text-white md:text-4xl">About Me</h2>
-        <div class="w-24 h-1 mx-auto mt-4 mb-6 bg-blue-500"></div>
-      </div>
-      <div class="max-w-3xl mx-auto text-center">
-        <p class="mb-8 text-lg leading-relaxed text-gray-300"> I'm a Computer Science graduate specializing in backend
-          development. With expertise in modern web technologies and Linux systems, I focus on building scalable and
-          maintainable applications that solve real-world problems. </p>
-        <div class="flex flex-wrap justify-center gap-6">
-          <div
-            class="flex items-center gap-2 p-4 border rounded-lg bg-slate-800 border-slate-700 card-hover">
-            <i data-feather="code" class="text-blue-400 icon-hover"></i> <span class="font-medium text-gray-200">Clean Code</span>
-          </div>
-          <div
-            class="flex items-center gap-2 p-4 border rounded-lg bg-slate-800 border-slate-700 card-hover">
-            <i data-feather="database" class="text-blue-400 icon-hover"></i> <span class="font-medium text-gray-200">Database
-              Design</span>
-          </div>
-          <div
-            class="flex items-center gap-2 p-4 border rounded-lg bg-slate-800 border-slate-700 card-hover">
-            <i data-feather="server" class="text-blue-400 icon-hover"></i> <span class="font-medium text-gray-200">System
-              Architecture</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-20 bg-slate-800">
-    <div class="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="mb-16 text-center">
-        <h2 class="text-3xl font-bold text-white md:text-4xl">Technical Skills</h2>
-        <div class="w-24 h-1 mx-auto mt-4 bg-blue-500"></div>
-      </div>
-
-      <!-- Backend Skills -->
-      <div class="mb-12 section-animate" data-animation="slide-up">
-        <h3 class="mt-6 mb-6 text-2xl font-semibold text-center text-white">Backend Development</h3>
-        <div class="grid grid-cols-2 gap-6 mt-6 mb-6 md:grid-cols-4 lg:grid-cols-5">
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/027-php.svg" alt="PHP">
-            <span class="font-medium text-gray-200">PHP</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/laravel-2.svg" alt="Laravel">
-            <span class="font-medium text-gray-200">Laravel</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/nodejs-logo-svgrepo-com.svg" alt="Node.js">
-            <span class="font-medium text-gray-200">Node.js</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/go-svgrepo-com.svg" alt="Go Lang">
-            <span class="font-medium text-gray-200">Go Lang</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Frontend Skills -->
-      <div class="mb-12">
-        <h3 class="mt-6 mb-6 text-2xl font-semibold text-center text-white">Frontend Development</h3>
-        <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/029-javascript.svg" alt="JavaScript">
-            <span class="font-medium text-gray-200">JavaScript</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/030-html-5.svg" alt="HTML">
-            <span class="font-medium text-gray-200">HTML</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/031-css.svg" alt="CSS">
-            <span class="font-medium text-gray-200">CSS</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/026-sass.svg" alt="Sass">
-            <span class="font-medium text-gray-200">Sass</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- DevOps Skills -->
-      <div class="mb-12">
-        <h3 class="mt-6 mb-6 text-2xl font-semibold text-center text-white">DevOps & Tools</h3>
-        <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="dist/img/svg/linux-tux.svg" alt="Linux">
-            <span class="font-medium text-gray-200">Linux</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/010-github.svg" alt="Git & Github">
-            <span class="font-medium text-gray-200">Git & Github</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/docker-svgrepo-com.svg" alt="Docker">
-            <span class="font-medium text-gray-200">Docker</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/001-nginx.svg" alt="Nginx">
-            <span class="font-medium text-gray-200">Nginx</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/apache-13.svg" alt="Apache">
-            <span class="font-medium text-gray-200">Apache</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Database Skills -->
-      <div class="mb-12">
-        <h3 class="mt-6 mb-6 text-2xl font-semibold text-center text-white">Database</h3>
-        <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="./dist/img/svg/mongodb-svgrepo-com.svg" alt="MongoDB">
-            <span class="font-medium text-gray-200">MongoDB</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="dist/img/svg/021-mysql.svg" alt="MySQL">
-            <span class="font-medium text-gray-200">MySQL</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="dist/img/svg/postgresql.svg" alt="PostgreSQL">
-            <span class="font-medium text-gray-200">PostgreSQL</span>
-          </div>
-
-          <div
-            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20">
-            <img class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
-              src="dist/img/svg/microsoftsqlserver-svgrepo-com.svg" alt="SQL Server">
-            <span class="font-medium text-gray-200">SQL Server</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="py-20 bg-slate-900" style="padding-top:5rem;padding-bottom:5rem">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="mb-16 text-center">
-        <h2 class="text-3xl font-bold text-white-900 dark:text-white md:text-4xl">Featured Projects</h2>
-        <div class="w-24 h-1 mx-auto my-8 bg-blue-600 dark:bg-blue-500" id=""></div>
-      </div>
-
-      <div class="max-w-3xl mx-auto" id="projects">
-        <!-- Projects will be loaded here via JavaScript with enhanced styling -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="py-20 bg-slate-900">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="mb-16 text-center">
-        <h2 class="text-3xl font-bold text-white-900 dark:text-white md:text-4xl">الخبرات العملية</h2>
-        <div class="w-24 h-1 mx-auto mt-4 bg-blue-600 dark:bg-blue-500"></div>
-      </div>
-
-      <div class="max-w-3xl mx-auto">
-        <div class="relative border-l border-gray-200 dark:border-gray-700">
-          <!-- Add your experience items here -->
-          <div class="mb-10 ml-6">
-            <span
-              class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 dark:bg-blue-900">
-              <div class="w-3 h-3 bg-blue-600 rounded-full dark:bg-blue-400"></div>
-            </span>
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Backend Developer</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Company Name • 2020 - Present</p>
-            <p class="mt-2 text-gray-600 dark:text-gray-300">Description of your role and achievements</p>
-          </div>
-          <!-- Add more experience items -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certificates Section -->
-  <section id="certificates" class="py-20 bg-slate-900">
-    <div class="px-4 py-8 mx-auto my-8 max-w-7xl sm:px-6 lg:px-8">
-      <div class="mb-16 text-center">
-        <h2 class="text-3xl font-bold text-white md:text-4xl">Certificates</h2>
-        <div class="w-24 h-1 mx-auto mt-4 bg-blue-500"></div>
-      </div>
-
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" id="certificates-container">
-        <!-- Certificates will be loaded here via JavaScript -->
-      </div>
-    </div>
-  </section>
-  <!-- Contact Section -->
-  <section id="contact"
-    class="py-20 my-8 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="mb-16 text-center">
-        <h2 class="text-4xl font-extrabold text-white">Get in Touch</h2>
-        <div class="w-24 h-1 mx-auto mt-4 mb-8 bg-blue-500"></div>
-        <p class="mb-8 text-lg text-gray-300">Let's connect and discuss how we can work together.</p>
-      </div>
-
-      <div class="max-w-4xl mx-auto">
-        <div class="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
-          <!-- Phone Card -->
-          <div
-            class="p-6 transition-all duration-300 border border-gray-700 rounded-lg shadow-sm bg-slate-900 hover:shadow-xl hover:shadow-blue-500/30 hover:scale-105 hover:border-blue-500/50 group">
-            <div class="flex items-center">
-              <div
-                class="inline-flex p-4 text-blue-300 transition-all duration-300 rounded-lg bg-blue-900/50 group-hover:bg-blue-800/50 group-hover:scale-110">
-                <i data-feather="phone" class="w-6 h-6 transition-transform duration-300 group-hover:rotate-12"></i>
-              </div>
-              <div class="ml-4">
-                <h3 class="text-xl font-medium text-white transition-colors duration-300 group-hover:text-blue-400">
-                  Whats App</h3> <a href="https://wa.link/giuax6" target="_blank"
-                  class="inline-block text-gray-400 transition-all duration-300 hover:text-blue-400 hover:translate-x-2">Contact On Whatsapp</a>
-              </div>
+                    <button
+                        type="button"
+                        class="p-2 bg-gray-100 rounded-md md:hidden"
+                        id="mobile-menu-button"
+                    >
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
             </div>
-          </div> <!-- Email Card -->
-          <div
-            class="p-6 transition-all duration-300 border border-gray-700 rounded-lg shadow-sm bg-slate-900 hover:shadow-xl hover:shadow-blue-500/30 hover:scale-105 hover:border-blue-500/50 group">
-            <div class="flex items-center">
-              <div
-                class="inline-flex p-4 text-blue-300 transition-all duration-300 rounded-lg bg-blue-900/50 group-hover:bg-blue-800/50 group-hover:scale-110">
-                <i data-feather="mail" class="w-6 h-6 transition-transform duration-300 group-hover:rotate-12"></i>
-              </div>
-              <div class="ml-4">
-                <h3 class="text-xl font-medium text-white transition-colors duration-300 group-hover:text-blue-400">
-                  Email</h3> <a href="mailto:beshoywageeh2016@gmail.com"
-                  class="inline-block text-blue-400 transition-all duration-300 hover:text-blue-300 hover:translate-x-2">beshoywageeh2016@gmail.com</a>
-              </div>
+
+            <!-- Mobile menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div
+                    class="px-2 pt-2 pb-3 space-y-1 bg-white border-b border-gray-200"
+                >
+                    <a
+                        href="#home"
+                        class="block px-3 py-2 rounded-md hover:bg-gray-100"
+                        >Home</a
+                    >
+                    <a
+                        href="#about"
+                        class="block px-3 py-2 rounded-md hover:bg-gray-100"
+                        >About</a
+                    >
+                    <a
+                        href="#skills"
+                        class="block px-3 py-2 rounded-md hover:bg-gray-100"
+                        >Skills</a
+                    >
+                    <a
+                        href="#projects"
+                        class="block px-3 py-2 rounded-md hover:bg-gray-100"
+                        >Projects</a
+                    >
+                    <a
+                        href="#contact"
+                        class="block px-3 py-2 rounded-md hover:bg-gray-100"
+                        >Contact</a
+                    >
+                </div>
             </div>
-          </div>
-        </div>
+        </nav>
 
-        <!-- Social Media Links -->
-        <div class="flex justify-center mt-12 space-x-6 section-animate" data-animation="slide-up"> <a
-            href="https://kutt.it/bishoy-twitter" target="_blank"
-            class="inline-flex items-center justify-center w-10 h-10 text-gray-400 transition-all duration-300 border border-gray-700 rounded-full social-icon bg-slate-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20">
-            <i data-feather="twitter" class="w-5 h-5"></i>
-          </a>
-          <a href="https://kutt.it/bishoy-facebook" target="_blank"
-            class="inline-flex items-center justify-center w-10 h-10 text-gray-400 transition-all duration-300 border border-gray-700 rounded-full bg-slate-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20">
-            <i data-feather="facebook" class="w-5 h-5"></i>
-          </a>
-          <a href="https://kutt.it/bishoy-linkedin" target="_blank"
-            class="inline-flex items-center justify-center w-10 h-10 text-gray-400 transition-all duration-300 border border-gray-700 rounded-full bg-slate-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20">
-            <i data-feather="linkedin" class="w-5 h-5"></i>
-          </a>
-          <a href="https://kutt.it/bishoy-github" target="_blank"
-            class="inline-flex items-center justify-center w-10 h-10 text-gray-400 transition-all duration-300 border border-gray-700 rounded-full bg-slate-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20">
-            <i data-feather="github" class="w-5 h-5"></i>
-          </a>
+        <!-- Enhanced Hero Section -->
+        <section
+            class="pt-32 pb-20 bg-gradient-to-br from-slate-900 to-slate-800 md:pt-40 md:pb-28"
+        >
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div
+                    class="flex flex-col items-center justify-between gap-12 md:flex-row"
+                >
+                    <div class="flex-1 text-center md:text-left">
+                        <h1
+                            class="mb-6 text-4xl font-bold text-white md:text-6xl section-animate animate slide-left"
+                        >
+                            <span class="hero-text typing-cursor"></span
+                            ><br />
+                            <span
+                                class="text-blue-400 font-bold transition-base hover:text-blue-300 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-blue-400 after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
+                            >
+                            </span>
+                        </h1>
+                        <p
+                            class="max-w-2xl mb-8 text-lg text-gray-200 animate fade-in"
+                        >
+                            Specializes in developing robust and scalable
+                            software solutions using modern technologies.
+                            Experience in PHP, Laravel, and database
+                            optimization.
+                        </p>
+                        <div
+                            class="flex flex-wrap justify-center gap-4 md:justify-start"
+                        >
+                            <a
+                                href="#contact"
+                                class="px-6 py-3 font-medium text-white bg-blue-600 rounded-lg shadow-lg transition-base hover:bg-blue-700 hover:scale-105 hover:shadow-blue-500/50"
+                            >
+                                <i
+                                    data-feather="phone"
+                                    class="inline w-4 h-4 mr-2"
+                                ></i>
+                                Contact Me
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://kutt.it/bishoy-cv"
+                                class="px-6 py-3 font-medium text-white border border-blue-500 rounded-lg transition-base hover:bg-blue-600 hover:border-blue-400 hover:scale-105"
+                                download
+                            >
+                                <i
+                                    data-feather="download"
+                                    class="inline w-4 h-4 mr-2"
+                                ></i>
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-1 max-w-md">
+                        <img
+                            src="./dist/img/profile-pic.png"
+                            alt="Beshoy Wageeh"
+                            class="w-64 h-64 mx-auto transition-all duration-300 transform rounded-full shadow-xl ring-4 ring-blue-500/30 md:w-80 md:h-80 hover:ring-blue-400/50 hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-105"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- About Section -->
+        <section
+            id="about"
+            class="py-20 bg-slate-900"
+            style="padding-top: 5rem; padding-bottom: 5rem"
+        >
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="mb-16 text-center">
+                    <h2 class="text-3xl font-bold text-white md:text-4xl">
+                        About Me
+                    </h2>
+                    <div
+                        class="w-24 h-1 mx-auto mt-4 mb-6 bg-blue-500"
+                    ></div>
+                </div>
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="mb-8 text-lg leading-relaxed text-gray-300">
+                        I am a results-oriented Back-End Developer and ICT
+                        Teacher with a passion for building scalable,
+                        high-efficiency web applications. With a solid
+                        foundation in Computer Science and extensive
+                        experience in the Laravel ecosystem, I specialize
+                        in transforming complex business requirements into
+                        streamlined digital solutions.<br />
+                        Throughout my career, I have focused on performance
+                        and optimization: Performance Optimization:
+                        Engineered a School Management System using Laravel
+                        and PostgreSQL that increased backend processing
+                        speed by 50%.<br />
+                        Operational Efficiency: Developed a custom Scout
+                        Management App that improved data handling speed by
+                        70% compared to traditional methods.
+                        <br />Versatile Development: Built a cross-platform
+                        Mini POS Software capable of seamless
+                        offline/online transitions, showcasing my ability
+                        to handle diverse hosting environments. I am a
+                        lifelong learner, holding certifications in UX
+                        Design, JavaScript, and Full-Stack Web Development
+                        from platforms like Udacity (NTL), Google Africa
+                        (FWD), and ITI. I thrive in dynamic environments
+                        where I can leverage my technical expertise in PHP,
+                        Node.js, and GoLang to solve real-world
+                        problems.<br />
+                        Core Technical Toolkit: Back-End: PHP (Laravel),
+                        Node.js (Express), GoLang Front-End: HTML5, CSS3,
+                        JavaScript, Bootstrap, Tailwind <br />Databases:
+                        MySQL, PostgreSQL, MongoDB <br />Tools & DevOps:
+                        Git/GitHub, Docker, Linux <br />Let’s connect! I am
+                        always looking to collaborate on innovative
+                        projects or discuss the latest trends in web
+                        architecture.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <div
+                            class="flex items-center gap-2 p-4 border rounded-lg bg-slate-800 border-slate-700 card-hover"
+                        >
+                            <i
+                                data-feather="code"
+                                class="text-blue-400 icon-hover"
+                            ></i>
+                            <span class="font-medium text-gray-200"
+                                >Clean Code</span
+                            >
+                        </div>
+                        <div
+                            class="flex items-center gap-2 p-4 border rounded-lg bg-slate-800 border-slate-700 card-hover"
+                        >
+                            <i
+                                data-feather="database"
+                                class="text-blue-400 icon-hover"
+                            ></i>
+                            <span class="font-medium text-gray-200"
+                                >Database Design</span
+                            >
+                        </div>
+                        <div
+                            class="flex items-center gap-2 p-4 border rounded-lg bg-slate-800 border-slate-700 card-hover"
+                        >
+                            <i
+                                data-feather="server"
+                                class="text-blue-400 icon-hover"
+                            ></i>
+                            <span class="font-medium text-gray-200"
+                                >System Architecture</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer class="py-10 border-t border-gray-800 bg-slate-900" style="padding-top:3rem;padding-bottom:3rem">
-    <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
-      <p class="text-gray-400" id="copyright">© <span id="current-year"></span> Beshoy Wageeh. All rights reserved.</p>
-    </div>
-  </footer>
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-slate-800">
+            <div class="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="mb-16 text-center">
+                    <h2 class="text-3xl font-bold text-white md:text-4xl">
+                        Technical Skills
+                    </h2>
+                    <div class="w-24 h-1 mx-auto mt-4 bg-blue-500"></div>
+                </div>
 
-  <script>    
-    feather.replace();
-    // Set current year
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
-  <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script src="./js/animations.js"></script>
-  <script src="./js/projects_data.js"></script>
-  <script src="./js/projctes_code.js"></script>
-  <script src="./js/certificates_data.js"></script>
-  <script src="./js/certificates_code.js"></script>
-  <script src="./js/smooth-scroll.js"></script>
-</body>
+                <!-- Backend Skills -->
+                <div
+                    class="mb-12 section-animate"
+                    data-animation="slide-up"
+                >
+                    <h3
+                        class="mt-6 mb-6 text-2xl font-semibold text-center text-white"
+                    >
+                        Backend Development
+                    </h3>
+                    <div
+                        class="grid grid-cols-2 gap-6 mt-6 mb-6 md:grid-cols-4 lg:grid-cols-5"
+                    >
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/027-php.svg"
+                                alt="PHP"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >PHP</span
+                            >
+                        </div>
 
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/laravel-2.svg"
+                                alt="Laravel"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Laravel</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/nodejs-logo-svgrepo-com.svg"
+                                alt="Node.js"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Node.js</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/go-svgrepo-com.svg"
+                                alt="Go Lang"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Go Lang</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="mb-12">
+                    <h3
+                        class="mt-6 mb-6 text-2xl font-semibold text-center text-white"
+                    >
+                        Frontend Development
+                    </h3>
+                    <div
+                        class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5"
+                    >
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/029-javascript.svg"
+                                alt="JavaScript"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >JavaScript</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/030-html-5.svg"
+                                alt="HTML"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >HTML</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/031-css.svg"
+                                alt="CSS"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >CSS</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/026-sass.svg"
+                                alt="Sass"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Sass</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Skills -->
+                <div class="mb-12">
+                    <h3
+                        class="mt-6 mb-6 text-2xl font-semibold text-center text-white"
+                    >
+                        DevOps & Tools
+                    </h3>
+                    <div
+                        class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5"
+                    >
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="dist/img/svg/linux-tux.svg"
+                                alt="Linux"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Linux</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/010-github.svg"
+                                alt="Git & Github"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Git & Github</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/docker-svgrepo-com.svg"
+                                alt="Docker"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Docker</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/001-nginx.svg"
+                                alt="Nginx"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Nginx</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/apache-13.svg"
+                                alt="Apache"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >Apache</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="mb-12">
+                    <h3
+                        class="mt-6 mb-6 text-2xl font-semibold text-center text-white"
+                    >
+                        Database
+                    </h3>
+                    <div
+                        class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5"
+                    >
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="./dist/img/svg/mongodb-svgrepo-com.svg"
+                                alt="MongoDB"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >MongoDB</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="dist/img/svg/021-mysql.svg"
+                                alt="MySQL"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >MySQL</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="dist/img/svg/postgresql.svg"
+                                alt="PostgreSQL"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >PostgreSQL</span
+                            >
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center p-6 transition-all duration-300 border rounded-lg bg-slate-900 border-slate-700 skill-card hover:shadow-lg hover:scale-105 hover:bg-slate-700 hover:shadow-blue-500/20"
+                        >
+                            <img
+                                class="w-16 h-16 mb-4 transition-transform duration-300 hover:rotate-12 brightness-90"
+                                src="dist/img/svg/microsoftsqlserver-svgrepo-com.svg"
+                                alt="SQL Server"
+                            />
+                            <span class="font-medium text-gray-200"
+                                >SQL Server</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section
+            class="py-20 bg-slate-900"
+            style="padding-top: 5rem; padding-bottom: 5rem"
+        >
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="mb-16 text-center">
+                    <h2
+                        class="text-3xl font-bold text-white-900 dark:text-white md:text-4xl"
+                    >
+                        Featured Projects
+                    </h2>
+                    <div
+                        class="w-24 h-1 mx-auto my-8 bg-blue-600 dark:bg-blue-500"
+                        id=""
+                    ></div>
+                </div>
+
+                <div class="max-w-3xl mx-auto" id="projects">
+                    <!-- Projects will be loaded here via JavaScript with enhanced styling -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="py-20 bg-slate-900">
+            <div class="px-4 py-8 mx-auto my-8 max-w-7xl sm:px-6 lg:px-8">
+                <div class="mb-16 text-center">
+                    <h2 class="text-3xl font-bold text-white md:text-4xl">
+                        Certificates
+                    </h2>
+                    <div class="w-24 h-1 mx-auto mt-4 bg-blue-500"></div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+                    id="certificates-container"
+                >
+                    <!-- Certificates will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section
+            id="contact"
+            class="py-20 my-8 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-900 dark:to-blue-900"
+        >
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="mb-16 text-center">
+                    <h2 class="text-4xl font-extrabold text-white">
+                        Get in Touch
+                    </h2>
+                    <div
+                        class="w-24 h-1 mx-auto mt-4 mb-8 bg-blue-500"
+                    ></div>
+                    <p class="mb-8 text-lg text-gray-300">
+                        Let's connect and discuss how we can work together.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div
+                        class="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2"
+                    >
+                        <!-- Phone Card -->
+                        <div
+                            class="p-6 transition-all duration-300 border border-gray-700 rounded-lg shadow-sm bg-slate-900 hover:shadow-xl hover:shadow-blue-500/30 hover:scale-105 hover:border-blue-500/50 group"
+                        >
+                            <div class="flex items-center">
+                                <div
+                                    class="inline-flex p-4 text-blue-300 transition-all duration-300 rounded-lg bg-blue-900/50 group-hover:bg-blue-800/50 group-hover:scale-110"
+                                >
+                                    <i
+                                        data-feather="phone"
+                                        class="w-6 h-6 transition-transform duration-300 group-hover:rotate-12"
+                                    ></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3
+                                        class="text-xl font-medium text-white transition-colors duration-300 group-hover:text-blue-400"
+                                    >
+                                        Whats App
+                                    </h3>
+                                    <a
+                                        href="https://wa.link/giuax6"
+                                        target="_blank"
+                                        class="inline-block text-gray-400 transition-all duration-300 hover:text-blue-400 hover:translate-x-2"
+                                        >Contact On Whatsapp</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Email Card -->
+                        <div
+                            class="p-6 transition-all duration-300 border border-gray-700 rounded-lg shadow-sm bg-slate-900 hover:shadow-xl hover:shadow-blue-500/30 hover:scale-105 hover:border-blue-500/50 group"
+                        >
+                            <div class="flex items-center">
+                                <div
+                                    class="inline-flex p-4 text-blue-300 transition-all duration-300 rounded-lg bg-blue-900/50 group-hover:bg-blue-800/50 group-hover:scale-110"
+                                >
+                                    <i
+                                        data-feather="mail"
+                                        class="w-6 h-6 transition-transform duration-300 group-hover:rotate-12"
+                                    ></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3
+                                        class="text-xl font-medium text-white transition-colors duration-300 group-hover:text-blue-400"
+                                    >
+                                        Email
+                                    </h3>
+                                    <a
+                                        href="mailto:beshoywageeh2016@gmail.com"
+                                        class="inline-block text-blue-400 transition-all duration-300 hover:text-blue-300 hover:translate-x-2"
+                                        >beshoywageeh2016@gmail.com</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div
+                        class="flex justify-center mt-12 space-x-6 section-animate"
+                        data-animation="slide-up"
+                    >
+                        <a
+                            href="https://kutt.it/bishoy-twitter"
+                            target="_blank"
+                            class="inline-flex items-center justify-center w-10 h-10 text-gray-400 transition-all duration-300 border border-gray-700 rounded-full social-icon bg-slate-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20"
+                        >
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a
+                            href="https://kutt.it/bishoy-facebook"
+                            target="_blank"
+                            class="inline-flex items-center justify-center w-10 h-10 text-gray-400 transition-all duration-300 border border-gray-700 rounded-full bg-slate-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20"
+                        >
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a
+                            href="https://kutt.it/bishoy-linkedin"
+                            target="_blank"
+                            class="inline-flex items-center justify-center w-10 h-10 text-gray-400 transition-all duration-300 border border-gray-700 rounded-full bg-slate-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20"
+                        >
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a
+                            href="https://kutt.it/bishoy-github"
+                            target="_blank"
+                            class="inline-flex items-center justify-center w-10 h-10 text-gray-400 transition-all duration-300 border border-gray-700 rounded-full bg-slate-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/20"
+                        >
+                            <i data-feather="github" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="py-10 border-t border-gray-800 bg-slate-900"
+            style="padding-top: 3rem; padding-bottom: 3rem"
+        >
+            <div
+                class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8"
+            >
+                <p class="text-gray-400" id="copyright">
+                    © <span id="current-year"></span> Beshoy Wageeh. All
+                    rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            feather.replace();
+            // Set current year
+            document.getElementById("current-year").textContent =
+                new Date().getFullYear();
+        </script>
+        <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="./js/animations.js"></script>
+        <script src="./js/projects_data.js"></script>
+        <script src="./js/projctes_code.js"></script>
+        <script src="./js/certificates_data.js"></script>
+        <script src="./js/certificates_code.js"></script>
+        <script src="./js/smooth-scroll.js"></script>
+    </body>
 </html>

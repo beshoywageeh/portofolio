@@ -1,39 +1,65 @@
 const projects = [
   {
-    name: "photo album",
-    description: "A modern photo album website built with HTML, CSS, and JavaScript. Features dark mode, smooth animations, and responsive design.",
-    technologies: ["HTML", "CSS", "JavaScript", "blade","laravel","MySQL"],
-    image: "./dist/img/projects/portfolio.jpg",
+    name: "netflixify",
+    description: "A Modern Movie Site made while learning Gulp",
+    technologies: ["HTML", "CSS", "JavaScript", "gulp"],
+    image: "https://i.ibb.co/7xTbPvSQ/178shots-so.png",
     liveUrl: "#",
-    githubUrl: "https://github.com/beshoywageeh/photo_album",
-    isPrivate: false
+    githubUrl: "https://github.com/beshoywageeh/netflixify",
+    isPrivate: false,
   },
   {
     name: "pos system",
-    description: "A point of sale system built with HTML, CSS, and JavaScript. Features barcode scanning, inventory management, and sales reporting.",
-    technologies: ["PHP", "Laravel", "MySQL", "JavaScript",'blade','bootstrap','jquery'],
-    image: "https://github.com/beshoywageeh/pos/blob/main/assets/img/screenshots/2.png?raw=true",
+    description:
+      "A point of sale system built with HTML, CSS, and JavaScript. Features barcode scanning, inventory management, and sales reporting.",
+    technologies: [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "JavaScript",
+      "blade",
+      "bootstrap",
+      "jquery",
+    ],
+    image: "https://i.ibb.co/JR4yb4gN/604shots-so.png",
     liveUrl: "#",
     githubUrl: "https://github.com/beshoywageeh/pos",
-    isPrivate: false
+    isPrivate: false,
   },
   {
     name: "Scout",
     description: "A Church Management System",
-    technologies: ["PHP", "Laravel", "MySQL", "JavaScript",'blade','bootstrap','jquery'],
-    image: "./dist/img/scout.jpg",
+    technologies: [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "JavaScript",
+      "blade",
+      "bootstrap",
+      "jquery",
+    ],
+    image: "https://i.ibb.co/ZzjY7dZS/756shots-so.png",
     liveUrl: "https://elsafinascout.runasp.net/scout/login",
     githubUrl: "https://github.com/beshoywageeh/Scout",
-    isPrivate: false
+    isPrivate: false,
   },
   {
     name: "School Management System",
-    description: "A School Management System built with HTML, CSS, and JavaScript. Features students management, attendance tracking, and reports generation. ",
-    technologies: ["PHP", "Laravel", "MySQL", "JavaScript",'blade','bootstrap','jquery'],
-    image: "./dist/img/school.jpg",
+    description:
+      "A School Management System built with HTML, CSS, and JavaScript. Features students management, attendance tracking, and reports generation. ",
+    technologies: [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "JavaScript",
+      "blade",
+      "bootstrap",
+      "jquery",
+    ],
+    image: "https://i.ibb.co/V0TMQZdJ/3673-67cf171399da4-1741625107.webp",
     liveUrl: "#",
     githubUrl: "https://github.com/beshoywageeh/school_managment",
-    isPrivate: false
-  }
+    isPrivate: false,
+  },
   // Add more projects as needed
-]; 
+];
